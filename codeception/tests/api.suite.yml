@@ -1,4 +1,5 @@
 actor: ApiTester
+bootstrap: bootstrap.php
 modules:
     enabled:
         - \Helper\Api

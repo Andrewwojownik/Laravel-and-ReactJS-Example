@@ -5,11 +5,6 @@ class ProjectIndexCest
     public function _before(ApiTester $I)
     {
     }
-
-    // tests
-    public function tryToTest(ApiTester $I)
-    {
-    }
 	
 	public function indexTest(\ApiTester $I)
     {

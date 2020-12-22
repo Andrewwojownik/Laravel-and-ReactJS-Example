@@ -19,3 +19,6 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/projects', [\App\Http\Controllers\ProjectController::class, 'index'])->name('projects.index');//->middleware('guest');
+Route::get('/projects/{id}', [\App\Http\Controllers\ProjectController::class, 'show'])->name('projects.show');//->middleware('guest');
+Route::post('/projects', [\App\Http\Controllers\ProjectController::class, 'create'])->name('projects.create');//->middleware('guest');
+Route::get('/projects', [\App\Http\Controllers\ProjectController::class, 'index'])->name('projects.index');//->middleware('guest');
